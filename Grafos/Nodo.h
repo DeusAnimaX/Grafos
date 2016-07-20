@@ -1,17 +1,18 @@
 #pragma once
 #include "stdafx.h"
 
-class InfoNodo
+class Nodo
 {
 private:
 	int elemento;
-	bool visitado;
+	bool visitado; // enum?
 	int posx;
 	int posy;
 
 public:
-	InfoNodo();
-	~InfoNodo();
+	Nodo();
+	Nodo(int);
+	~Nodo();
 
 	int getElemento();
 	void setElemento(int);

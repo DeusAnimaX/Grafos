@@ -10,7 +10,7 @@
 #include <stdio.h>
 #include <tchar.h>
 
-//#include <iostream>
+#include <iostream>
 //#include <stdlib.h>
 //#include <cstdlib>
 

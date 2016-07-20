@@ -30,7 +30,7 @@
     <ClInclude Include="Arco.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="InfoNodo.h">
+    <ClInclude Include="Nodo.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -47,7 +47,7 @@
     <ClCompile Include="Arco.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="InfoNodo.cpp">
+    <ClCompile Include="Nodo.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

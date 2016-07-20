@@ -1,15 +1,18 @@
 #pragma once
 #include "stdafx.h"
 #include "Arco.h"
-#include "InfoNodo.h"
+#include "Nodo.h"
+#include <exception>
 
 class Grafo
 {
 private:
-	char vertices[MAX_NODOS];
-	Arco costos[MAX_NODOS][MAX_NODOS];
+	Nodo* vertices[MAX_NODOS];
+	Arco* costos[MAX_NODOS][MAX_NODOS];
 	int visitados[MAX_NODOS];
 
+	int buscarIndice(int);
+	Nodo* buscar(int);
 public:
 	Grafo();
 	~Grafo();
@@ -21,6 +24,5 @@ public:
 	// x1, y1, x2, y2, costo
 	void setCosto(int, int, int, int, int);
 	void dibujar();
-	void getPosicionVertice(int);
 };
 

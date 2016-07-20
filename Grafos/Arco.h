@@ -9,6 +9,7 @@ private:
 
 public:
 	Arco();
+	Arco(int, int);
 	~Arco();
 
 	int getCosto();

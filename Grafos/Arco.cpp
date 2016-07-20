@@ -2,6 +2,14 @@
 
 Arco::Arco()
 {
+	setCosto(0);
+	setDistancia(0);
+}
+
+Arco::Arco(int costo, int distancia)
+{
+	setCosto(costo);
+	setDistancia(distacia);
 }
 
 Arco::~Arco()
