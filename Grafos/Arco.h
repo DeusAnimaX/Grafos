@@ -5,7 +5,7 @@ class Arco
 {
 private:
 	int costo;
-	int distacia;
+	int distancia;
 
 public:
 	Arco();

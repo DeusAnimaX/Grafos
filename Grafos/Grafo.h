@@ -18,7 +18,7 @@ public:
 	~Grafo();
 
 	// origen, destino, costo, distancia
-	void insertarArco(int, int, int, int);
+	bool insertarArco(int, int, int, int);
 	void insertarVertice(int);
 	
 	// x1, y1, x2, y2, costo

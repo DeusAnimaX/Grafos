@@ -9,7 +9,7 @@ Arco::Arco()
 Arco::Arco(int costo, int distancia)
 {
 	setCosto(costo);
-	setDistancia(distacia);
+	setDistancia(distancia);
 }
 
 Arco::~Arco()
@@ -25,9 +25,9 @@ void Arco::setCosto(int costo) {
 }
 
 int Arco::getDistancia() {
-	return this->distacia;
+	return this->distancia;
 }
 
 void Arco::setDistancia(int distancia) {
-	this->distacia = distacia;
+	this->distancia = distancia;
 }

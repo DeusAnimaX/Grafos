@@ -14,6 +14,13 @@ Grafo* grafo;
 void execOpt(int opt) {
 	switch (opt) {
 	case 1:
+		int elemento;
+		cout << "Valor a insertar: ";
+		cin >> elemento;
+		grafo->insertarVertice(elemento);
+
+		break;
+	case 2:
 		int origen, destino, costo, distancia;
 		cout << "Origen: ";
 		cin >> origen;
@@ -27,19 +34,22 @@ void execOpt(int opt) {
 		cout << "\nDistancia: ";
 		cin >> distancia;
 
-		grafo->insertarArco(origen, destino, costo, distancia);
-		break;
-	case 2:
-		int elemento;
-		cout << "Valor a insertar: ";
-		cin >> elemento;
-		grafo->insertarVertice(elemento);
+		if (grafo->insertarArco(origen, destino, costo, distancia))
+			cout << "\nInsertado con éxito!\n\n";
+		else
+			cout << "\nNo pudo ser insertado.\n\n";
+
 		break;
 	case 3:
 		grafo->dibujar();
+
 		break;
+
+	case 4: system("pause");
+
 	default:
-		cout << "Opcion invalida";
+		cout << "\nOpcion invalida\n\n";
+
 		break;
 	}
 }
